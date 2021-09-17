@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background-color: rgb(221, 246, 248);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 10px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+.nav{
+    list-style: none;
+}
+.nav  li{
+    display:  inline-block;
+    padding: 0px,20px;
+}
+.nav li a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    margin: 0px 3px;
+    color: black;
+}
+.nav li a:hover{
+    color:rgb(0, 0, 0);
+    text-shadow: 0px 0.5px 2px rgb(87, 87, 87);
+}
+main{
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+.content_list{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    margin: 0px 3px;
+    color: rgb(20, 0, 134);
+}
+.content_list:hover{
+    color:rgb(0, 6, 83);
+    text-shadow: 0px 0.5px 2px rgb(87, 87, 87);
+}
+
+.heading__intro{
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-weight: 550;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.desc__intro{
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    line-height: 1.5rem;
+}
+.btn{
+    display: grid;
+    place-items: center;
+    margin-bottom: 2.2rem;
+}
+.btn a{
+
+    text-decoration: none;
+    color: white;
+}
+.start{
+    margin-top: 30px ;
+    padding: 10px 25px;
+    border: none;
+    background-color: rgb(102, 255, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(81, 255, 0);
+    transition: all 0.3s ease 0s;
+}
+.start:hover{
+    background-color: rgb(255,251,0);
+    box-shadow: 0px 0px 10px rgb(255,251,0);
+}
+.nav-toggle{
+    display: none;
+}
+.nav__list{
+    height: 0;
+    overflow: hidden;
+}
+@media screen and (max-width: 575px){
+    .nav-toggle{
+        display: flex;
+        position: relative;
+        margin: auto;
+        padding:auto;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .navbtn{
+        transition: all 0.3s ease 0s;
+    }
+    .navbtn:hover{
+        transform: rotate(90deg);
+    }
+    .nav__link{
+        height: 0;
+        overflow: hidden;
+    }
+    .nav__list{
+        height: 0;
+        overflow: hidden;
+    }
+    .show-links{
+        display: flex;
+        height: 8rem;
+        padding: 10px 8%;
+        margin-left: 60%;
+        margin-top: 2.7rem;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 0px 10px 10px;
+        text-decoration: none;
+        position: absolute;
+        list-style: none;
+        transition: all 0.3s ease 0s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100000;
+    }
+    .show-links li{
+        display:block;
+        margin-bottom:0.20rem;
+        padding: 0;
+    }
+    .show-links li a{
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        color: black;
+    }
+    .show-links li a:hover{
+        color:rgb(0, 0, 0);
+        text-shadow: 0px 0.5px 2px rgb(87, 87, 87);
+    }
+    .heading__intro{
+        text-align: center;
+        margin-top: 1.2rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-weight: 550;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .desc__intro{
+        text-align: center;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Masteryt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="learn.css" />
+    <link rel="stylesheet" href="codesnippet.css" />
+    <link rel="stylesheet" href="dracula.css">
+    <script src="codesnippet.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="jsmastery.svg" class="navlogo" alt="JS MASSTERY"></a>
+        <nav class="nav">
+            <ul class="nav__link">
+                <li class="nav__listItem"><a href="index.html" class="nav__link">HOME</a></li>
+                <li class="nav__listItem"><a href="learn.html" class="nav__link">LEARN</a></li>
+                <li class="nav__listItem"><a href="projects.html" class="nav__link">PROJECTS</a></li>
+                <li class="nav__listItem"><a href="about.html" class="nav__link">ABOUT</a></li>
+                <li class="nav__listItem"><a href="contacts.html" class="nav__link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle">
+            <img src="navicon.svg" alt="#" class="navbtn">
+        </button>
+    </header>
+    <nav class="nav__list">
+        <ul class="nav-links2">
+            <li class="nav__listItem"><a href="index.html" class="nav__link">HOME</a></li>
+            <li class="nav__listItem"><a href="learn.html" class="nav__link">LEARN</a></li>
+            <li class="nav__listItem"><a href="projects.html" class="nav__link">PROJECTS</a></li>
+            <li class="nav__listItem"><a href="about.html" class="nav__link">ABOUT</a></li>
+            <li class="nav__listItem"><a href="contacts.html" class="nav__link">CONTACT</a></li>
+        </ul>
+    </nav>
+<main class="main">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#77ff00" fill-opacity="1" d="M0,160L30,176C60,192,120,224,180,218.7C240,213,300,171,360,160C420,149,480,171,540,176C600,181,660,171,720,154.7C780,139,840,117,900,112C960,107,1020,117,1080,138.7C1140,160,1200,192,1260,202.7C1320,213,1380,203,1410,197.3L1440,192L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+    <h2 class="heading__intro">JAVASCRIPT TUTORIALS</h2>
+    <div class="greenlight">
+    <p class="desc__intro">1. JavaScript is the world's most popular programming language. <br><br>
+
+        2. JavaScript is the programming language of the Web.<br><br>
+        
+        3. JavaScript is easy to learn.<br><br>
+        
+        4. This tutorial will teach you JavaScript from basic to advanced.</p><br>
+    </div>
+    <h2 class="heading__intro">Why Study JavaScript?</h2>
+    <p class="desc__intro">JavaScript is one of the 3 languages all web developers must learn:<br><br>
+
+        1. HTML to define the content of web pages.<br><br>
+     
+        2. CSS to specify the layout of web pages.<br><br>
+     
+        3. JavaScript to program the behavior of web pages. </p>
+    <div class="greenlight">
+        <p class="desc__intro"><b>This tutorial covers every version of JavaScript:</b><br><br>
+    * The Original JavaScript ES1 ES2 ES3 (1997-1999)<br>
+    * The First Main Revision ES5 (2009)<br>
+    * The Second Revision ES6 (2015)<br>
+    * The Yearly Additions (2016, 2017, 2018)<br><br>
+    </p>
+    </div>
+    <h2 class="heading__intro">JavaScript  Introduction</h2>
+    <h3 class="subheading">First of all, how to use JavaScript in a HTML document</h3>
+    <p class="desc__intro">
+        There are several ways to use JS in a HTML document. We can write a JavaScript Code inside the &lt;body&gt; tag using &lt;script&gt; tag.
+    </p>
+    <div class="codesnippet">
+        <p class="language" id="language-copy">HTML</p>
+        <div class="code-wrapper">
+          <pre>
+              <code id="code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title>Document &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;This is my HTML Code&lt;/h2&gt;
+
+&lt;script&gt;This is my JavaScript Code&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+          <button id="copy-button">Copy Code</button>
+        </div>
+        <span id="copy-success">Code Copied</span>
+      </div>
+      <p class="desc__intro">
+        Or, you can use separate(External) JavaScript code file by attaching it in HTML file.
+        <br>
+        Like this: (Lets say JavaScript code file name is  javaScript.js)
+    </p>
+    <div class="codesnippet">
+        <p class="language" id="language-copy">HTML</p>
+        <div class="code-wrapper">
+          <pre>
+              <code id="code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title>Document &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;This is my HTML Code&lt;/h2&gt;
+
+&lt;script src="javaScript.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+          <button id="copy-button">Copy Code</button>
+        </div>
+        <span id="copy-success">Code Copied</span>
+      </div>
+    </div>
+
+    <div class="greenlight">
+        <h3 class="subheading">Now lets see some examples of what JavaScript can do.<br><br>
+        </h3>
+    </div>
+
+    <h3 class="subheading">JavaScript Can Change HTML Content</h3>
+    <p class="desc__intro">One of many JavaScript HTML methods is getElementById(). <br><br>
+
+        The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>    
+    
+        <div class="codesnippet">
+            <p class="language" id="language-copy">HTML</p>
+            <div class="code-wrapper">
+              <pre>
+                  <code id="code">
+document.getElementById("demo").innerHTML = "Hello JavaScript"; 
+                </code>
+              </pre>
+              <button id="copy-button">Copy Code</button>
+            </div>
+            <span id="copy-success">Code Copied</span>
+          </div>
+        </div>
+
+        <div class="btn">
+            <button class="start"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html" target="_blank">TRY IT YOURSELF</a></button>
+            </div>
+                <h3 class="subheading">JavaScript accepts both double and single quotes:
+                </h3>
+            <div class="codesnippet">
+                <p class="language" id="language-copy">HTML</p>
+                <div class="code-wrapper">
+                  <pre>
+                      <code id="code">
+document.getElementById('demo').innerHTML = 'Hello JavaScript';  
+                    </code>
+                  </pre>
+                  <button id="copy-button">Copy Code</button>
+                </div>
+                <span id="copy-success">Code Copied</span>
+              </div>
+            </div>
+            <div class="btn">
+                <button class="start"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes" target="_blank">TRY IT YOURSELF</a></button>
+                </div>
+                <h3 class="subheading">JavaScript Can Change HTML Attribute Values
+                </h3>
+                <p class="desc__intro">In this example JavaScript changes the value of the src (source) attribute of an &lt;img&gt; tag:.</p>
+                <div class="codesnippet">
+                    <p class="language" id="language-copy">HTML</p>
+                    <div class="code-wrapper">
+                      <pre>
+                          <code id="code">
+button=addEventlistener("click",function(){document.getElementById('myImage').src='pic_bulbon.gif'})
+                        </code>
+                      </pre>
+                      <button id="copy-button">Copy Code</button>
+                    </div>
+                    <span id="copy-success">Code Copied</span>
+                  </div>
+                </div>
+                <div class="btn">
+                    <button class="start"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb" target="_blank">TRY IT YOURSELF</a></button>
+                    </div>
+                    <h3 class="subheading">JavaScript Can Change HTML Styles (CSS)
+                    </h3>
+                    <p class="desc__intro">Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+                    <div class="codesnippet">
+                        <p class="language" id="language-copy">HTML</p>
+                        <div class="code-wrapper">
+                          <pre>
+                              <code id="code">
+document.getElementById("demo").style.fontSize = "35px"; 
+                            </code>
+                          </pre>
+                          <button id="copy-button">Copy Code</button>
+                        </div>
+                        <span id="copy-success">Code Copied</span>
+                      </div>
+                    </div>
+                    <div class="btn">
+                        <button class="start"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank">TRY IT YOURSELF</a></button>
+                        </div>
+                        
+                        <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank"><h3 class="subheading">IF YOU WANT TO LEARN MORE PLEASE VISIT W3SCHOOL OR JUST CLICK HERE.</h3></a>
+</main>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#77ff00" fill-opacity="1" d="M0,160L30,176C60,192,120,224,180,218.7C240,213,300,171,360,160C420,149,480,171,540,176C600,181,660,171,720,154.7C780,139,840,117,900,112C960,107,1020,117,1080,138.7C1140,160,1200,192,1260,202.7C1320,213,1380,203,1410,197.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script src="navtoggle.js"></script>
+</body>
+</html>

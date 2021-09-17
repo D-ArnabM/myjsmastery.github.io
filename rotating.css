@@ -1,0 +1,36 @@
+@keyframes orbit {
+    from {
+      transform:
+        rotate(0deg)
+        translateX(90px);
+    }
+    to {
+      transform:
+        rotate(360deg)
+        translateX(90px);
+    }
+  }
+  
+  @media (
+    prefers-reduced-motion: no-preference
+  ) {
+    .moon {
+      animation:
+        orbit 1000ms linear infinite;
+    }
+  }
+  .wrapper {
+    position: relative;
+  }
+  .moon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 5rem;
+    height: 10rem;
+    background: rgba(90, 246, 0, 0.5);
+    border-radius: 50%;
+  }
